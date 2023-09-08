@@ -8,9 +8,10 @@ class BooksController < ApplicationController
     book.save
     redirect_to '/top'
   end
-    
-  
+
+
   def index
+    @books = Book.all
   end
 
   def show
@@ -18,7 +19,7 @@ class BooksController < ApplicationController
 
   def edit
   end
-  
+
     private
   #ストロングパラメータ
   def book_params
