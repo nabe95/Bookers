@@ -3,4 +3,6 @@
 
 <h2>Body:</h2>
 <p><%= @book.body %></p>
-<%= link_to "edit", edit_book_path(@book.id) %>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<%= link_to "Back", books_path(@book.id) %>
